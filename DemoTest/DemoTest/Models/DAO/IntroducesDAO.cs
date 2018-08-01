@@ -1,4 +1,4 @@
-﻿using Demo.Models.DemoTest;
+﻿using DemoTest.Models.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;

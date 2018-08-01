@@ -7,10 +7,11 @@ namespace DemoTest.Areas.Admin.Models
 {
     public class SidebarModel
     {
-        int id;
-        string name;
-
+        public int id;
+        public string name;
+        public string img;
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
+        public string Img { get => img; set => img = value; }
     }
 }

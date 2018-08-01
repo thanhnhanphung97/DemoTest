@@ -144,6 +144,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginAdminController.cs" />
     <Compile Include="Areas\Admin\Models\AccountModel.cs" />
     <Compile Include="Areas\Admin\Models\IntroducesModel.cs" />
     <Compile Include="Areas\Admin\Models\NewsModel.cs" />
@@ -178,6 +179,7 @@
     <Content Include="Areas\Admin\Assets\dist\js\sb-admin-2.min.js" />
     <Content Include="Areas\Admin\Assets\editor\editor.css" />
     <Content Include="Areas\Admin\Assets\editor\editor.js" />
+    <Content Include="Areas\Admin\Assets\js\Ajax_Json_JS.js" />
     <Content Include="Areas\Admin\Assets\js\sb-admin-2.js" />
     <Content Include="Areas\Admin\Assets\js\sp-form-admin-index.js" />
     <Content Include="Areas\Admin\Assets\js\sp-form-admin.js" />
@@ -940,6 +942,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -1019,6 +1022,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\LoginAdmin\Index.cshtml" />
     <None Include="Scripts\jquery-1.11.0.intellisense.js" />
     <Content Include="Scripts\froala-editor\css\froala_editor.css" />
     <Content Include="Scripts\froala-editor\css\froala_editor.min.css" />
@@ -1149,6 +1153,7 @@
     <Content Include="Scripts\jquery-1.11.0.min.js" />
     <Content Include="Scripts\jquery-1.11.0.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />

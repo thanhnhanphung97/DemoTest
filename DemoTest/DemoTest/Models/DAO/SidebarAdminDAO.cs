@@ -10,7 +10,7 @@ namespace DemoTest.Models.DAO
     {
         private static SidebarAdminDAO instance;
 
-        public static SidebarAdminDAO Instance { get { if (instance == null) instance = new SidebarAdminDAO(); return SidebarAdminDAO.instance; }; private set => instance = value; }
+        public static SidebarAdminDAO Instance { get { if (instance == null) instance = new SidebarAdminDAO(); return SidebarAdminDAO.instance; } private set => instance = value; }
 
         private SidebarAdminDAO() { }
 
@@ -29,17 +29,17 @@ namespace DemoTest.Models.DAO
             return list;
         }
 
-        public bool InsertSidebar(string name)
+        public bool InsertSidebar(string name,string img)
         {
-            string query = "USP_Add_Sidebar @name";
-            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { name });
+            string query = "USP_Add_Sidebar @name , @img";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { name , img });
             return result > 0;
         }
 
-        public bool EditSidebar(int id, string name)
+        public bool EditSidebar(int id, string name,string img)
         {
-            string query = "USP_Edit_Sidebar @id , @name";
-            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { id, name });
+            string query = "USP_Edit_Sidebar @id , @name , @img";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { id, name , img});
             return result > 0;
         }
 
